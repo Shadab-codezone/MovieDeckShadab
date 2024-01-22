@@ -1,0 +1,147 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Search bar styles */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+#search-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sorting options styles */
+.sorting-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#sort-date-btn,
+#sort-rating-btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Active sorting button styles */
+#sort-date-btn.active,
+#sort-rating-btn.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Tabs styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.tabs button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Active tab button styles */
+.tabs button.active-tab {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Movie list styles */
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#movies{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Movie card styles */
+.movie-card {
+    width: 300px;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.favorite-btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #e74c3c;
+    background: none;
+    border: none;
+}
+
+
+.pagination {
+    margin-top: 1rem;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
